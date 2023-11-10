@@ -1,0 +1,1132 @@
+<!-- report_template.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Responsive meta tag -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5/dist/flatly/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="./static/cdn.jsdelivr.net_npm_bootswatch@5_dist_flatly_bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="./static/favicon.png">
+  <title>Lightly Insights</title>
+
+  <style>
+    /* Custom styles for square boxes */
+    .square-box {
+      position: relative;
+      /* This enables absolute positioning for child elements */
+      width: 100%;
+      /* Responsive width */
+      overflow: hidden;
+      /* Hide anything outside the box */
+    }
+
+    .square-box::before {
+      content: "";
+      /* Add a pseudo-element inside the box */
+      display: block;
+      /* Block level */
+      padding-top: 100%;
+      /* Top padding is based on the width of the element, making it square */
+    }
+
+    .square-box img {
+      position: absolute;
+      top: 50%;
+      /* Push the image 50% from the top of the container */
+      left: 50%;
+      /* Push the image 50% from the left of the container */
+      transform: translate(-50%, -50%);
+      /* Offset the image position by its own size to center it */
+      max-width: 100%;
+      /* Limit image width to not exceed the container */
+      max-height: 100%;
+      /* Limit image height to not exceed the container */
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Heading and top table -->
+
+    <div id="section-grid-layout" class="my-5">
+      <h1 class="mb-4">Lightly Insights</h1>
+
+      <table class="table table-hover">
+        <tbody>
+          <tr>
+            <th scope="row">Image Folder</th>
+            <td>/Users/michal/datasets/aquarium/test/images</td>
+          </tr>
+          <tr>
+            <th scope="row">Date Generated</th>
+            <td>2023-11-10 17:42:52 CET</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <!-- Overview cards -->
+
+    <div id="section-grid-layout" class="my-5">
+
+      <div class="row">
+        <div class="col-lg-6 mb-3">
+          <div class="card text-white bg-primary">
+            <!-- <div class="card-header">Header</div> -->
+            <div class="card-body">
+              <h3 class="card-titl mb-3">63 Images</h4>
+
+                <table class="table table-hover">
+                  <tbody>
+                    <tr class="table-primary">
+                      <th scope="row">Median size </th>
+                      <td>1536 × 2048</td>
+                    </tr>
+                    <tr class="table-primary">
+                      <th scope="row">
+                        Images without a label
+                        
+                      </th>
+                      <td>0</td>
+                    </tr>
+                    <tr class="table-primary">
+                      <th scope="row">Images with 0 objects</th>
+                      <td>0</td>
+                    </tr>
+                    <tr class="table-primary">
+                      <th scope="row">Avg objects per image</th>
+                      <td>9.3</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card text-white bg-secondary">
+            <!-- <div class="card-header">Header</div> -->
+            <div class="card-body">
+              <h3 class="card-title mb-3">584 Objects</h4>
+
+                <table class="table table-hover">
+                  <tbody>
+                    <tr class="table-secondary">
+                      <th scope="row">Num classes</th>
+                      <td>7</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <th scope="row">Avg objects per class</th>
+                      <td>83.4</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <th scope="row">Avg images per class</th>
+                      <td>9.0</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <th scope="row">Avg size</th>
+                      <td>242.1 × 210.7</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <th scope="row">Avg area</th>
+                      <td>2 %</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sample Images -->
+
+    <div id="section-grid-layout" class="my-5">
+
+      <h3>Sample Images</h3>
+
+      <div class="row">
+        
+        <!-- Four equal columns -->
+        <div class="col-6 col-md-3 g-3">
+          <div class="square-box">
+            <img src="sample/IMG_3164_jpeg_jpg.rf.7882eeb3ea4eb5f1f07edda7328f02ff.jpg" class="img-fluid rounded" alt="IMG_3164_jpeg_jpg.rf.7882eeb3ea4eb5f1f07edda7328f02ff.jpg">
+          </div>
+        </div>
+        
+        <!-- Four equal columns -->
+        <div class="col-6 col-md-3 g-3">
+          <div class="square-box">
+            <img src="sample/IMG_2380_jpeg_jpg.rf.d443c2adf80f2ed4fc631a397187f1f2.jpg" class="img-fluid rounded" alt="IMG_2380_jpeg_jpg.rf.d443c2adf80f2ed4fc631a397187f1f2.jpg">
+          </div>
+        </div>
+        
+        <!-- Four equal columns -->
+        <div class="col-6 col-md-3 g-3">
+          <div class="square-box">
+            <img src="sample/IMG_2301_jpeg_jpg.rf.822c0a62daa53448f5e66fadb2b15b85.jpg" class="img-fluid rounded" alt="IMG_2301_jpeg_jpg.rf.822c0a62daa53448f5e66fadb2b15b85.jpg">
+          </div>
+        </div>
+        
+        <!-- Four equal columns -->
+        <div class="col-6 col-md-3 g-3">
+          <div class="square-box">
+            <img src="sample/IMG_8404_jpg.rf.ae7116b6017b6e9ff042103f104721ad.jpg" class="img-fluid rounded" alt="IMG_8404_jpg.rf.ae7116b6017b6e9ff042103f104721ad.jpg">
+          </div>
+        </div>
+        
+        <!-- Four equal columns -->
+        <div class="col-6 col-md-3 g-3">
+          <div class="square-box">
+            <img src="sample/IMG_2468_jpeg_jpg.rf.c6cd976633535d0af9d098accc6a13e0.jpg" class="img-fluid rounded" alt="IMG_2468_jpeg_jpg.rf.c6cd976633535d0af9d098accc6a13e0.jpg">
+          </div>
+        </div>
+        
+        <!-- Four equal columns -->
+        <div class="col-6 col-md-3 g-3">
+          <div class="square-box">
+            <img src="sample/IMG_2465_jpeg_jpg.rf.ffc005c4b0cc5ecae8e5b06fda23bdbb.jpg" class="img-fluid rounded" alt="IMG_2465_jpeg_jpg.rf.ffc005c4b0cc5ecae8e5b06fda23bdbb.jpg">
+          </div>
+        </div>
+        
+        <!-- Four equal columns -->
+        <div class="col-6 col-md-3 g-3">
+          <div class="square-box">
+            <img src="sample/IMG_2450_jpeg_jpg.rf.f4281c6909578c3d8042ac580f9c006d.jpg" class="img-fluid rounded" alt="IMG_2450_jpeg_jpg.rf.f4281c6909578c3d8042ac580f9c006d.jpg">
+          </div>
+        </div>
+        
+        <!-- Four equal columns -->
+        <div class="col-6 col-md-3 g-3">
+          <div class="square-box">
+            <img src="sample/IMG_2387_jpeg_jpg.rf.49c671cc255041888c34bb0f0c3d4018.jpg" class="img-fluid rounded" alt="IMG_2387_jpeg_jpg.rf.49c671cc255041888c34bb0f0c3d4018.jpg">
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+    <!-- Image Size Insights -->
+
+    <div id="section-grid-layout" class="my-5">
+
+      <div class="card border-primary">
+        <h4 class="card-header">Image Size Insights</h4>
+        <div class="card-body">
+
+          <div class="row">
+
+            <div class="col-lg-6">
+              <img src="image_size_plot.png" class="img-fluid" alt="Image Size Plot">
+            </div>
+
+            <div class="col-lg-6">
+
+              <table class="table table-hover mt-5">
+                <thead>
+                  <tr>
+                    <th scope="col">Width × Height</th>
+                    <th scope="col">Num Images</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr>
+                    <td>1536 × 2048</td>
+                    <td>41</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>1080 × 1920</td>
+                    <td>11</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>4032 × 3024</td>
+                    <td>9</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>2048 × 1536</td>
+                    <td>2</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Object Detection Insights -->
+
+    <div id="section-grid-layout" class="my-5">
+
+      <div class="card border-primary">
+        <h4 class="card-header">Object Detection Insights</h4>
+        <div class="card-body">
+          <h4 class="card-title">584 Objects of 7 Classes</h4>
+
+          <div class="col-lg-6">
+
+            <table class="table table-hover mt-4">
+              <tbody>
+                <tr>
+                  <th scope="row">Avg size</th>
+                  <td>242.1 × 210.7</td>
+                </tr>
+                <tr>
+                  <th scope="row">Avg area</th>
+                  <td>2 %</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+
+          
+          <div class="row">
+  <div class="col-lg-6">
+    <img src="plots/objects_per_image.png" class="img-fluid" alt="Objects per Image">
+  </div>
+  <div class="col-lg-6">
+    <img src="plots/heatmap.png" class="img-fluid" alt="Object Location Heatmap">
+  </div>
+  <div class="col-lg-6">
+    <img src="plots/object_sizes_abs.png" class="img-fluid" alt="Object Sizes in Pixels">
+  </div>
+  <div class="col-lg-6">
+    <img src="plots/object_sizes_rel.png" class="img-fluid" alt="Object Sizes in Percent">
+  </div>
+  <div class="col-lg-6">
+    <img src="plots/side_length_avg_plot.png" class="img-fluid" alt="Object Side Length Average">
+  </div>
+  <div class="col-lg-6">
+    <img src="plots/rel_area.png" class="img-fluid" alt="Object Relative Area">
+  </div>
+</div>
+          
+
+          <table class="table table-sm table-hover">
+            <thead>
+              <tr>
+                <th class="col-3" scope="col">Class</th>
+                <th class="col-1" scope="col">Num Objects</th>
+                <th class="col-8" scope="col">Bar Representation</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              
+              <tr>
+                <td class="col-3">fish</td>
+                <td class="col-1">249</td>
+                <td class="col-8">
+                  <div class="progress mt-1">
+                    <div class="progress-bar" role="progressbar"
+                      style="width: 42.63698630136986%;"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+              
+              
+              <tr>
+                <td class="col-3">jellyfish</td>
+                <td class="col-1">154</td>
+                <td class="col-8">
+                  <div class="progress mt-1">
+                    <div class="progress-bar" role="progressbar"
+                      style="width: 26.36986301369863%;"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+              
+              
+              <tr>
+                <td class="col-3">penguin</td>
+                <td class="col-1">82</td>
+                <td class="col-8">
+                  <div class="progress mt-1">
+                    <div class="progress-bar" role="progressbar"
+                      style="width: 14.04109589041096%;"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+              
+              
+              <tr>
+                <td class="col-3">shark</td>
+                <td class="col-1">38</td>
+                <td class="col-8">
+                  <div class="progress mt-1">
+                    <div class="progress-bar" role="progressbar"
+                      style="width: 6.506849315068493%;"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+              
+              
+              <tr>
+                <td class="col-3">puffin</td>
+                <td class="col-1">35</td>
+                <td class="col-8">
+                  <div class="progress mt-1">
+                    <div class="progress-bar" role="progressbar"
+                      style="width: 5.993150684931506%;"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+              
+              
+              <tr>
+                <td class="col-3">stingray</td>
+                <td class="col-1">15</td>
+                <td class="col-8">
+                  <div class="progress mt-1">
+                    <div class="progress-bar" role="progressbar"
+                      style="width: 2.5684931506849313%;"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+              
+              
+              <tr>
+                <td class="col-3">starfish</td>
+                <td class="col-1">11</td>
+                <td class="col-8">
+                  <div class="progress mt-1">
+                    <div class="progress-bar" role="progressbar"
+                      style="width: 1.8835616438356164%;"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Class Insights -->
+
+    <div id="section-grid-layout" class="my-5">
+      <div class="card border-primary">
+        <h4 class="card-header">Class Insights</h4>
+        <div class="card-body">
+
+          <h4 class="card-title">7 Classes</h4>
+          <p>Choose a class:</p>
+
+          <!-- Nav pills -->
+          <ul class="nav nav-pills mb-4">
+            
+            
+            <li class="nav-item" role="presentation">
+              <a class="btn btn-outline-primary btn-sm m-1" data-bs-toggle="tab" data-bs-target="#c0"
+                href="#c0">
+                fish&nbsp;&nbsp;<span class="badge bg-light rounded-pill">249</span>
+              </a>
+            </li>
+            
+            
+            <li class="nav-item" role="presentation">
+              <a class="btn btn-outline-primary btn-sm m-1" data-bs-toggle="tab" data-bs-target="#c1"
+                href="#c1">
+                jellyfish&nbsp;&nbsp;<span class="badge bg-light rounded-pill">154</span>
+              </a>
+            </li>
+            
+            
+            <li class="nav-item" role="presentation">
+              <a class="btn btn-outline-primary btn-sm m-1" data-bs-toggle="tab" data-bs-target="#c2"
+                href="#c2">
+                penguin&nbsp;&nbsp;<span class="badge bg-light rounded-pill">82</span>
+              </a>
+            </li>
+            
+            
+            <li class="nav-item" role="presentation">
+              <a class="btn btn-outline-primary btn-sm m-1" data-bs-toggle="tab" data-bs-target="#c4"
+                href="#c4">
+                shark&nbsp;&nbsp;<span class="badge bg-light rounded-pill">38</span>
+              </a>
+            </li>
+            
+            
+            <li class="nav-item" role="presentation">
+              <a class="btn btn-outline-primary btn-sm m-1" data-bs-toggle="tab" data-bs-target="#c3"
+                href="#c3">
+                puffin&nbsp;&nbsp;<span class="badge bg-light rounded-pill">35</span>
+              </a>
+            </li>
+            
+            
+            <li class="nav-item" role="presentation">
+              <a class="btn btn-outline-primary btn-sm m-1" data-bs-toggle="tab" data-bs-target="#c6"
+                href="#c6">
+                stingray&nbsp;&nbsp;<span class="badge bg-light rounded-pill">15</span>
+              </a>
+            </li>
+            
+            
+            <li class="nav-item" role="presentation">
+              <a class="btn btn-outline-primary btn-sm m-1" data-bs-toggle="tab" data-bs-target="#c5"
+                href="#c5">
+                starfish&nbsp;&nbsp;<span class="badge bg-light rounded-pill">11</span>
+              </a>
+            </li>
+            
+
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content" id="myTabContent">
+
+            
+            
+            <div class="tab-pane fade" id="c0" role="tabpanel">
+              <h4>249 Objects of Class "fish"</h4>
+
+              
+
+              <div class="col-lg-6">
+                <table class="table table-hover mt-4">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Avg size</th>
+                      <td>217.4 × 174.2</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Avg area</th>
+                      <td>1 %</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <h4 class="mt-4">Sample Images</h4>
+
+              <div class="row">
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_8343_jpg.rf.efee0a6c465a3a85c47c416fffd97749.jpg" class="img-fluid rounded" alt="IMG_8343_jpg.rf.efee0a6c465a3a85c47c416fffd97749.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_8343_jpg.rf.efee0a6c465a3a85c47c416fffd97749.jpg" class="img-fluid rounded" alt="IMG_8343_jpg.rf.efee0a6c465a3a85c47c416fffd97749.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_8582_MOV-5_jpg.rf.76780eed973e1d0c3c0e22cfb6aaf810.jpg" class="img-fluid rounded" alt="IMG_8582_MOV-5_jpg.rf.76780eed973e1d0c3c0e22cfb6aaf810.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_8582_MOV-5_jpg.rf.76780eed973e1d0c3c0e22cfb6aaf810.jpg" class="img-fluid rounded" alt="IMG_8582_MOV-5_jpg.rf.76780eed973e1d0c3c0e22cfb6aaf810.jpg">
+                  </div>
+                </div>
+                
+              </div>
+
+              <h4 class="mt-4">Statistics</h4>
+
+              
+              <div class="row">
+  <div class="col-lg-6">
+    <img src="class_plots/0/objects_per_image.png" class="img-fluid" alt="Objects per Image">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/0/heatmap.png" class="img-fluid" alt="Object Location Heatmap">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/0/object_sizes_abs.png" class="img-fluid" alt="Object Sizes in Pixels">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/0/object_sizes_rel.png" class="img-fluid" alt="Object Sizes in Percent">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/0/side_length_avg_plot.png" class="img-fluid" alt="Object Side Length Average">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/0/rel_area.png" class="img-fluid" alt="Object Relative Area">
+  </div>
+</div>
+              
+
+              
+
+
+            </div>
+            
+            
+            <div class="tab-pane fade" id="c1" role="tabpanel">
+              <h4>154 Objects of Class "jellyfish"</h4>
+
+              
+
+              <div class="col-lg-6">
+                <table class="table table-hover mt-4">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Avg size</th>
+                      <td>266.8 × 250.4</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Avg area</th>
+                      <td>2 %</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <h4 class="mt-4">Sample Images</h4>
+
+              <div class="row">
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2468_jpeg_jpg.rf.c6cd976633535d0af9d098accc6a13e0.jpg" class="img-fluid rounded" alt="IMG_2468_jpeg_jpg.rf.c6cd976633535d0af9d098accc6a13e0.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2468_jpeg_jpg.rf.c6cd976633535d0af9d098accc6a13e0.jpg" class="img-fluid rounded" alt="IMG_2468_jpeg_jpg.rf.c6cd976633535d0af9d098accc6a13e0.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2468_jpeg_jpg.rf.c6cd976633535d0af9d098accc6a13e0.jpg" class="img-fluid rounded" alt="IMG_2468_jpeg_jpg.rf.c6cd976633535d0af9d098accc6a13e0.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2468_jpeg_jpg.rf.c6cd976633535d0af9d098accc6a13e0.jpg" class="img-fluid rounded" alt="IMG_2468_jpeg_jpg.rf.c6cd976633535d0af9d098accc6a13e0.jpg">
+                  </div>
+                </div>
+                
+              </div>
+
+              <h4 class="mt-4">Statistics</h4>
+
+              
+              <div class="row">
+  <div class="col-lg-6">
+    <img src="class_plots/1/objects_per_image.png" class="img-fluid" alt="Objects per Image">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/1/heatmap.png" class="img-fluid" alt="Object Location Heatmap">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/1/object_sizes_abs.png" class="img-fluid" alt="Object Sizes in Pixels">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/1/object_sizes_rel.png" class="img-fluid" alt="Object Sizes in Percent">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/1/side_length_avg_plot.png" class="img-fluid" alt="Object Side Length Average">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/1/rel_area.png" class="img-fluid" alt="Object Relative Area">
+  </div>
+</div>
+              
+
+              
+
+
+            </div>
+            
+            
+            <div class="tab-pane fade" id="c2" role="tabpanel">
+              <h4>82 Objects of Class "penguin"</h4>
+
+              
+
+              <div class="col-lg-6">
+                <table class="table table-hover mt-4">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Avg size</th>
+                      <td>135.8 × 123.9</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Avg area</th>
+                      <td>1 %</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <h4 class="mt-4">Sample Images</h4>
+
+              <div class="row">
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2301_jpeg_jpg.rf.822c0a62daa53448f5e66fadb2b15b85.jpg" class="img-fluid rounded" alt="IMG_2301_jpeg_jpg.rf.822c0a62daa53448f5e66fadb2b15b85.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2301_jpeg_jpg.rf.822c0a62daa53448f5e66fadb2b15b85.jpg" class="img-fluid rounded" alt="IMG_2301_jpeg_jpg.rf.822c0a62daa53448f5e66fadb2b15b85.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2301_jpeg_jpg.rf.822c0a62daa53448f5e66fadb2b15b85.jpg" class="img-fluid rounded" alt="IMG_2301_jpeg_jpg.rf.822c0a62daa53448f5e66fadb2b15b85.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2301_jpeg_jpg.rf.822c0a62daa53448f5e66fadb2b15b85.jpg" class="img-fluid rounded" alt="IMG_2301_jpeg_jpg.rf.822c0a62daa53448f5e66fadb2b15b85.jpg">
+                  </div>
+                </div>
+                
+              </div>
+
+              <h4 class="mt-4">Statistics</h4>
+
+              
+              <div class="row">
+  <div class="col-lg-6">
+    <img src="class_plots/2/objects_per_image.png" class="img-fluid" alt="Objects per Image">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/2/heatmap.png" class="img-fluid" alt="Object Location Heatmap">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/2/object_sizes_abs.png" class="img-fluid" alt="Object Sizes in Pixels">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/2/object_sizes_rel.png" class="img-fluid" alt="Object Sizes in Percent">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/2/side_length_avg_plot.png" class="img-fluid" alt="Object Side Length Average">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/2/rel_area.png" class="img-fluid" alt="Object Relative Area">
+  </div>
+</div>
+              
+
+              
+
+
+            </div>
+            
+            
+            <div class="tab-pane fade" id="c4" role="tabpanel">
+              <h4>38 Objects of Class "shark"</h4>
+
+              
+
+              <div class="col-lg-6">
+                <table class="table table-hover mt-4">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Avg size</th>
+                      <td>442.1 × 454.4</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Avg area</th>
+                      <td>6 %</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <h4 class="mt-4">Sample Images</h4>
+
+              <div class="row">
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2499_jpeg_jpg.rf.8ca9acd673bf3b68d4b79912ea028c4c.jpg" class="img-fluid rounded" alt="IMG_2499_jpeg_jpg.rf.8ca9acd673bf3b68d4b79912ea028c4c.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2496_jpeg_jpg.rf.c7a2c3e6d5ff3cf5a3e14d29fc984b08.jpg" class="img-fluid rounded" alt="IMG_2496_jpeg_jpg.rf.c7a2c3e6d5ff3cf5a3e14d29fc984b08.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2496_jpeg_jpg.rf.c7a2c3e6d5ff3cf5a3e14d29fc984b08.jpg" class="img-fluid rounded" alt="IMG_2496_jpeg_jpg.rf.c7a2c3e6d5ff3cf5a3e14d29fc984b08.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2496_jpeg_jpg.rf.c7a2c3e6d5ff3cf5a3e14d29fc984b08.jpg" class="img-fluid rounded" alt="IMG_2496_jpeg_jpg.rf.c7a2c3e6d5ff3cf5a3e14d29fc984b08.jpg">
+                  </div>
+                </div>
+                
+              </div>
+
+              <h4 class="mt-4">Statistics</h4>
+
+              
+              <div class="row">
+  <div class="col-lg-6">
+    <img src="class_plots/4/objects_per_image.png" class="img-fluid" alt="Objects per Image">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/4/heatmap.png" class="img-fluid" alt="Object Location Heatmap">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/4/object_sizes_abs.png" class="img-fluid" alt="Object Sizes in Pixels">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/4/object_sizes_rel.png" class="img-fluid" alt="Object Sizes in Percent">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/4/side_length_avg_plot.png" class="img-fluid" alt="Object Side Length Average">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/4/rel_area.png" class="img-fluid" alt="Object Relative Area">
+  </div>
+</div>
+              
+
+              
+
+
+            </div>
+            
+            
+            <div class="tab-pane fade" id="c3" role="tabpanel">
+              <h4>35 Objects of Class "puffin"</h4>
+
+              
+
+              <div class="col-lg-6">
+                <table class="table table-hover mt-4">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Avg size</th>
+                      <td>164.9 × 161.0</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Avg area</th>
+                      <td>2 %</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <h4 class="mt-4">Sample Images</h4>
+
+              <div class="row">
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_3134_jpeg_jpg.rf.732382d2d33deedaa00c0a931b441a79.jpg" class="img-fluid rounded" alt="IMG_3134_jpeg_jpg.rf.732382d2d33deedaa00c0a931b441a79.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_3134_jpeg_jpg.rf.732382d2d33deedaa00c0a931b441a79.jpg" class="img-fluid rounded" alt="IMG_3134_jpeg_jpg.rf.732382d2d33deedaa00c0a931b441a79.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_3134_jpeg_jpg.rf.732382d2d33deedaa00c0a931b441a79.jpg" class="img-fluid rounded" alt="IMG_3134_jpeg_jpg.rf.732382d2d33deedaa00c0a931b441a79.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_3134_jpeg_jpg.rf.732382d2d33deedaa00c0a931b441a79.jpg" class="img-fluid rounded" alt="IMG_3134_jpeg_jpg.rf.732382d2d33deedaa00c0a931b441a79.jpg">
+                  </div>
+                </div>
+                
+              </div>
+
+              <h4 class="mt-4">Statistics</h4>
+
+              
+              <div class="row">
+  <div class="col-lg-6">
+    <img src="class_plots/3/objects_per_image.png" class="img-fluid" alt="Objects per Image">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/3/heatmap.png" class="img-fluid" alt="Object Location Heatmap">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/3/object_sizes_abs.png" class="img-fluid" alt="Object Sizes in Pixels">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/3/object_sizes_rel.png" class="img-fluid" alt="Object Sizes in Percent">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/3/side_length_avg_plot.png" class="img-fluid" alt="Object Side Length Average">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/3/rel_area.png" class="img-fluid" alt="Object Relative Area">
+  </div>
+</div>
+              
+
+              
+
+
+            </div>
+            
+            
+            <div class="tab-pane fade" id="c6" role="tabpanel">
+              <h4>15 Objects of Class "stingray"</h4>
+
+              
+
+              <div class="col-lg-6">
+                <table class="table table-hover mt-4">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Avg size</th>
+                      <td>534.7 × 316.1</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Avg area</th>
+                      <td>6 %</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <h4 class="mt-4">Sample Images</h4>
+
+              <div class="row">
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2651_jpeg_jpg.rf.bc0fb7f887d3256688d9b7f8a281cc4f.jpg" class="img-fluid rounded" alt="IMG_2651_jpeg_jpg.rf.bc0fb7f887d3256688d9b7f8a281cc4f.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_8582_MOV-5_jpg.rf.76780eed973e1d0c3c0e22cfb6aaf810.jpg" class="img-fluid rounded" alt="IMG_8582_MOV-5_jpg.rf.76780eed973e1d0c3c0e22cfb6aaf810.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2496_jpeg_jpg.rf.c7a2c3e6d5ff3cf5a3e14d29fc984b08.jpg" class="img-fluid rounded" alt="IMG_2496_jpeg_jpg.rf.c7a2c3e6d5ff3cf5a3e14d29fc984b08.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2582_jpeg_jpg.rf.9da510ef6d9c7db6c26c3eafd60d475b.jpg" class="img-fluid rounded" alt="IMG_2582_jpeg_jpg.rf.9da510ef6d9c7db6c26c3eafd60d475b.jpg">
+                  </div>
+                </div>
+                
+              </div>
+
+              <h4 class="mt-4">Statistics</h4>
+
+              
+              <div class="row">
+  <div class="col-lg-6">
+    <img src="class_plots/6/objects_per_image.png" class="img-fluid" alt="Objects per Image">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/6/heatmap.png" class="img-fluid" alt="Object Location Heatmap">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/6/object_sizes_abs.png" class="img-fluid" alt="Object Sizes in Pixels">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/6/object_sizes_rel.png" class="img-fluid" alt="Object Sizes in Percent">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/6/side_length_avg_plot.png" class="img-fluid" alt="Object Side Length Average">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/6/rel_area.png" class="img-fluid" alt="Object Relative Area">
+  </div>
+</div>
+              
+
+              
+
+
+            </div>
+            
+            
+            <div class="tab-pane fade" id="c5" role="tabpanel">
+              <h4>11 Objects of Class "starfish"</h4>
+
+              
+
+              <div class="col-lg-6">
+                <table class="table table-hover mt-4">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Avg size</th>
+                      <td>405.4 × 300.2</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Avg area</th>
+                      <td>5 %</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <h4 class="mt-4">Sample Images</h4>
+
+              <div class="row">
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_3129_jpeg_jpg.rf.cfb2d57ad2c14e4b58427467a294810e.jpg" class="img-fluid rounded" alt="IMG_3129_jpeg_jpg.rf.cfb2d57ad2c14e4b58427467a294810e.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2387_jpeg_jpg.rf.49c671cc255041888c34bb0f0c3d4018.jpg" class="img-fluid rounded" alt="IMG_2387_jpeg_jpg.rf.49c671cc255041888c34bb0f0c3d4018.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2532_jpeg_jpg.rf.cb0d95e7918d73216f0b356349f98538.jpg" class="img-fluid rounded" alt="IMG_2532_jpeg_jpg.rf.cb0d95e7918d73216f0b356349f98538.jpg">
+                  </div>
+                </div>
+                
+                <!-- Four equal columns -->
+                <div class="col-6 col-md-3 g-3">
+                  <div class="square-box">
+                    <img src="sample/IMG_2532_jpeg_jpg.rf.cb0d95e7918d73216f0b356349f98538.jpg" class="img-fluid rounded" alt="IMG_2532_jpeg_jpg.rf.cb0d95e7918d73216f0b356349f98538.jpg">
+                  </div>
+                </div>
+                
+              </div>
+
+              <h4 class="mt-4">Statistics</h4>
+
+              
+              <div class="row">
+  <div class="col-lg-6">
+    <img src="class_plots/5/objects_per_image.png" class="img-fluid" alt="Objects per Image">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/5/heatmap.png" class="img-fluid" alt="Object Location Heatmap">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/5/object_sizes_abs.png" class="img-fluid" alt="Object Sizes in Pixels">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/5/object_sizes_rel.png" class="img-fluid" alt="Object Sizes in Percent">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/5/side_length_avg_plot.png" class="img-fluid" alt="Object Side Length Average">
+  </div>
+  <div class="col-lg-6">
+    <img src="class_plots/5/rel_area.png" class="img-fluid" alt="Object Relative Area">
+  </div>
+</div>
+              
+
+              
+
+
+            </div>
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+    <div id="section-grid-layout" class="my-5">
+      <p class="text-center text-secondary">Generated with <a href="https://github.com/lightly-ai/lightly-insights">Lightly Insights</a>.</p>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap Bundle -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+  <script src="./static/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
